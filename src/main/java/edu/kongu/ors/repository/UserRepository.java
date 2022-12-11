@@ -7,5 +7,5 @@ import edu.kongu.ors.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer>{
-	
+	public User findByUsernameAndPassword(String username, String password);
 }
